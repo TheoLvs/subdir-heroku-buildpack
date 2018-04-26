@@ -18,7 +18,7 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
 		echo "       created tmp dir prod: $TMP_DIR/prod"
 		mkdir $TMP_DIR/prod
 		echo "       copying original build dir to tempdir : $BUILD_DIR to $TMP_DIR"
-		cp -R $BUILD_DIR/. $TMP_DIR/prod
+		cp -R $BUILD_DIR/. $TMP_DIR/prod/
 	 	echo "       cleaning build dir $BUILD_DIR"
 		rm -rf $BUILD_DIR
 		echo "       recreating $BUILD_DIR"
